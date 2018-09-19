@@ -1,0 +1,165 @@
+/* general */
+body{
+    background: rgb(202, 202, 202);
+}
+/* hero code */
+
+.hero-container {
+    min-height: 680px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.6),
+    rgba(165, 160, 160, 0.719)), url('./background.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+}
+
+.flex-container {
+    width:100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    margin-right: 20px;
+}
+
+.burger{
+    display: none;
+    color: darkblue;
+    justify-content: flex-start;
+}
+
+.hamburger {
+    display: none;
+    background: transparent;
+    color: black;
+    border: none;
+    justify-content: flex-end;
+
+}
+
+.link {
+    height: 80px;
+    margin: 5px;
+    flex-basis: 90px;
+    color: darkblue;
+}
+
+.link-1,
+.link-2,
+.link-3,
+.link-4 {
+    flex-wrap: wrap;
+    margin-top:20px;
+}
+
+.link-1{
+    margin-left: auto;   
+}
+
+.link-4{
+    margin-right: 20px; 
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hero-button {
+    color: white;
+    border: none;
+    background: darkblue;
+    padding: 10px 20px;
+    margin-left: 45%;
+}
+
+.hero-button:hover {
+    cursor: pointer;
+    background: rgb(72, 255, 0);
+}
+
+/* footer code */
+
+.flex-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+ }
+
+a{
+    height:80px;
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    color: rgb(72, 255, 0);
+    text-decoration:underline;
+}
+
+footer {
+    height: 100px;
+    background: #F3F3F3;
+    padding: 40px 0 80px;
+    margin-top: 10%;
+}
+
+footer h2 {
+    display: flex;
+    color: #4d4d4d;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin: 0 2% 20px 0;
+}
+
+footer ul{
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    margin-top: 8x;
+}
+
+footer a {
+    color: darkblue;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.social-icons {
+    display: flex;
+}
+
+/* responsive code */
+
+@media (max-width: 700px) {
+    .hero-container {
+        padding-top: 20px;
+    }
+
+    .flex-container {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        margin-right: auto;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+}
