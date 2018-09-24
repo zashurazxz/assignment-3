@@ -31,10 +31,13 @@ body{
 .hamburger {
     display: none;
     background: transparent;
-    color: black;
+    color: darkblue;
     border: none;
     justify-content: flex-end;
+}
 
+.hamburger :hover {
+ color: rgb(72, 255, 0);   
 }
 
 .link {
@@ -137,9 +140,8 @@ footer a {
     font-size: 0.8em;
     font-weight: 300;
 }
-
-.social-icons {
-    display: flex;
+.up {
+    margin-bottom: 55px;
 }
 
 /* responsive code */
